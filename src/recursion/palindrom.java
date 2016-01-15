@@ -1,36 +1,16 @@
 package recursion;
-
-import com.sun.org.apache.regexp.internal.CharacterArrayCharacterIterator;
-
 public class palindrom {
 	
-	public boolean wert;
-	public String text;
-	char [] zeichen;
-	
-	public String check (String text) {
-		if (text) {
-			
+	public static boolean isPalindorme(String text) {
+		
+		if (text.length()<=1) {
+			return true;
 		}
-		
 	}
-	
-	
-	
-	
-	static boolean check(String text, int position)
-	{
-		char charFirst  = text.charAt(position);
-		char charLast = text.charAt(text.length()-position);
-		first = Character.isLetter(charFirst);
-		last = Character.isLetter(charLast);
-		
-		
-		return true;
-		
-	}
-	
 
+	char first = Character.toLowerCase(text.charAt(0));
+	char last = Character.toLowerCase(text.charAt(text.lengh()-1));
 	
-}
+	if(Character.isLetter(first) && Character.isLetter(last)) {
+}}
 
